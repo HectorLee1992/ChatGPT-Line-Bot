@@ -53,7 +53,7 @@ def callback():
 def handle_text_message(event):
     user_id = event.source.user_id
     text = event.message.text.strip()
-    logger.info(f'{user_id}: {text}')
+    logger.info(f'{user_id}')
 
     try:
         if text.startswith('/註冊'):
